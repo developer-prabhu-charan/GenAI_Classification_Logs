@@ -35,21 +35,4 @@ def classify_csv(input_file):
 
 
 if __name__ == "__main__":
-    classify_csv("resources/test.csv")
-
-    logs = [
-    #    ("ModernCRM", "IP 192.168.133.114 blocked due to potential attack"),
-        ("BillingSystem", "User User12345 logged in."),
-      #  ("AnalyticsEngine", "File data_6957.csv uploaded successfully by user User265."),
-       # ("AnalyticsEngine", "Backup completed successfully."),
-        #("ModernHR", "GET /v2/54fadb412c4e40cdbaed9335e4c35a9e/servers/detail HTTP/1.1"" Return code: 200 len: 1893 time: 0.2676129"),
-        #("ModernHR", "Admin access escalation detected for user 9429"),
-        #("LegacyCRM", "Case escalation for ticket ID 7324 failed because the assigned support"),
-        #("LegacyCRM", "Invoice generation process aborted for order ID 8910 due to invalid tax"),
-        #("LegacyCRM", "The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaign'"),
-        #("LegacyCRM", " The 'ReportGenerator' module will be retired in version 4"),
-    ]
-    classified_logs = classify(logs)
-    print(classified_logs)
-
-    
+    classify_csv("resources/test.csv")    
